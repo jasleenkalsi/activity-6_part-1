@@ -1,0 +1,73 @@
+﻿[
+    {
+        "Id": "sha256:61e01287e546aac28a3f56839c136b31f590273f3b41187a36f46f6a03bbfe22",
+        "RepoTags": [
+            "nginx:alpine"
+        ],
+        "RepoDigests": [
+            "nginx@sha256:61e01287e546aac28a3f56839c136b31f590273f3b41187a36f46f6a03bbfe22"
+        ],
+        "Parent": "",
+        "Comment": "buildkit.dockerfile.v0",
+        "Created": "2025-10-07T21:06:46Z",
+        "DockerVersion": "",
+        "Author": "",
+        "Architecture": "amd64",
+        "Os": "linux",
+        "Size": 22596807,
+        "GraphDriver": {
+            "Data": null,
+            "Name": "overlayfs"
+        },
+        "RootFS": {
+            "Type": "layers",
+            "Layers": [
+                "sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2bc3e313ad12f8bde9d1",
+                "sha256:1967fccdbe5ecc2a4a26c981e4e8acb1b502bdf4f857a3873055be24c206250a",
+                "sha256:ed6be5e2fd3344bf7298424195ed5e013e433de466479ca0966a568442d0e77e",
+                "sha256:abbef7f883142e780f114b3dc34eb0aed8b857926abe515215c15da379f21413",
+                "sha256:3e4655a388760170cfe7a19371dcacdf54e4de712c225dc337f3ca4a06888753",
+                "sha256:dc45ec6c902bb29d6c9884da6e5caed40f6cc1bb96ee4d7518197d4094153090",
+                "sha256:1704c5a3d8da4ae6352d5eb6964facf4b1ffb3af8ae77d78b0d869ae1315f211",
+                "sha256:e9a26559275da161c8178875c4f23d4b16b02f3f22949e8a3630d25d73f8362e"
+            ]
+        },
+        "Metadata": {
+            "LastTagTime": "2025-10-20T16:13:49.443241806Z"
+        },
+        "Descriptor": {
+            "mediaType": "application/vnd.oci.image.index.v1+json",
+            "digest": "sha256:61e01287e546aac28a3f56839c136b31f590273f3b41187a36f46f6a03bbfe22",
+            "size": 10333
+        },
+        "Config": {
+            "Cmd": [
+                "nginx",
+                "-g",
+                "daemon off;"
+            ],
+            "Entrypoint": [
+                "/docker-entrypoint.sh"
+            ],
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "NGINX_VERSION=1.29.2",
+                "PKG_RELEASE=1",
+                "DYNPKG_RELEASE=1",
+                "NJS_VERSION=0.9.3",
+                "NJS_RELEASE=1"
+            ],
+            "ExposedPorts": {
+                "80/tcp": {}
+            },
+            "Labels": {
+                "maintainer": "NGINX Docker Maintainers \u003cdocker-maint@nginx.com\u003e"
+            },
+            "OnBuild": null,
+            "StopSignal": "SIGQUIT",
+            "User": "",
+            "Volumes": null,
+            "WorkingDir": "/"
+        }
+    }
+]
